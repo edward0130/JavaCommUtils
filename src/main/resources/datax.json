@@ -1,0 +1,73 @@
+{
+  "job": {
+    "setting": {
+      "speed": {
+        "channel": 1
+      }
+    },
+    "content": [
+      {
+        "reader": {
+          "name": "odpsreader",
+          "parameter": {
+            "accessId": "******************************",
+            "accessKey": "*****************************",
+            "column": [
+              "*"
+            ],
+            "partition": [
+              "pt=20141010000000,year=2014"
+            ],
+            "odpsServer": "http://xxx/api",
+            "project": "cdo_datasync",
+            "table": "datax3_odpswriter_perf_10column_1kb_00",
+            "tunnelServer": "http://xxx"
+          }
+        },
+        "writer": {
+          "name": "streamwriter",
+          "parameter": {
+            "print": false,
+            "column": [
+              {
+                "value": "485924f6ab7f272af361cd3f7f2d23e0d764942351#$%^&fdafdasfdas%%^(*&^^&*"
+              },
+              {
+                "value": "true",
+                "type": "bool"
+              },
+              {
+                "value": "1696248667889",
+                "type": "long"
+              },
+              {
+                "type": "date",
+                "value": "2013-07-06 00:00:00",
+                "dateFormat": "yyyy-mm-dd hh:mm:ss"
+              },
+              {
+                "value": "3.141592653578",
+                "type": "double"
+              },
+              {
+                "value": "100dafdsafdsahofjdpsawifdishaf;dsadsafdsahfdsajf;dsfdsa;fjdsal;11209"
+              },
+              {
+                "value": "100dafdsafdsahofjdpsawifdishaf;dsadsafdsahfdsajf;dsfdsa;fjdsal;11fdsafdsfdsa209"
+              },
+              {
+                "value": "100DAFDSAFDSAHOFJDPSAWIFDISHAF;dsadsafdsahfdsajf;dsfdsa;FJDSAL;11209"
+              },
+              {
+                "value": "100dafdsafdsahofjdpsawifdishaf;DSADSAFDSAHFDSAJF;dsfdsa;fjdsal;11209"
+              },
+              {
+                "value": "12~!2345100dafdsafdsahofjdpsawifdishaf;dsadsafdsahfdsajf;dsfdsa;fjdsal;11209"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
